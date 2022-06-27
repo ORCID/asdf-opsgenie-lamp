@@ -24,5 +24,8 @@ fi
 
 unzip -q "$release_file" -d "$ASDF_DOWNLOAD_PATH" || exit 1
 
+# rename the tool to an unversioned name
+mv "${TOOL_NAME}_v${ASDF_INSTALL_VERSION}" "$TOOL_NAME"
+
 # Remove the zip file since we don't need to keep it
-#rm "$release_file"
+rm "$release_file"
