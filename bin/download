@@ -25,4 +25,4 @@ fi
 unzip -q "$release_file" -d "$ASDF_DOWNLOAD_PATH" || exit 1
 
 # Remove the zip file since we don't need to keep it
-rm "$release_file"
+#rm "$release_file"
